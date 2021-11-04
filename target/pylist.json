@@ -1,0 +1,1 @@
+[{"package": "asgiref", "version": "3.4.1", "deps": []}, {"package": "django", "version": "3.2.9", "deps": [{"package": "asgiref", "version": "3.4.1"}, {"package": "sqlparse", "version": "0.4.2"}, {"package": "pytz", "version": "2021.3"}]}, {"package": "pytz", "version": "2021.3", "deps": []}, {"package": "sqlparse", "version": "0.4.2", "deps": []}]
