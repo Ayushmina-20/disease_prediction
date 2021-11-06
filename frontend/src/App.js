@@ -1,13 +1,13 @@
 import "./App.css";
 import Main from "./components/Main";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import SideMenu, { menuItems } from "./components/SideMenu";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useState } from "react";
 
-const Dashboard = () => <h1>Dashboard</h1>;
-const Content = () => <div><Main/></div>;
+const Dashboard = () => <h1>Welcome</h1>;
+
 // const Courses = () => <h1>Content/Courses</h1>;
 // const Videos = () => <h1>Content/Videos</h1>;
 // const Design = () => <h1>Design</h1>;
@@ -35,12 +35,12 @@ function App() {
           {menuItems.map((menu, index) => (
             <>
               <Route key={menu.name} exact={menu.exact} path={menu.to}>
-                <h1>{menu.name}</h1>
+                {/* <h1>{menu.name}</h1> */}
               </Route>
               {menu.subMenus && menu.subMenus.length > 0
                 ? menu.subMenus.map((subMenu, i) => (
                     <Route key={subMenu.name} path={subMenu.to}>
-                      <h1>{subMenu.name}</h1>
+                      {/* <h1>{subMenu.name}</h1> */}
                     </Route>
                   ))
                 : null}
